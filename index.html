@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>final project</title>
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="container" id="images">
+            <div class="part1">
+                <h2>Roca</h2>
+                <div>
+                    <h1>About me</h1>
+                    <div class="number">01</div>
+                </div>
+            </div>
+            <div class="part2">
+                <h2>Hi, I'm </h2>
+                <h1>Lika Goroziani</h1>
+                <h4>I am Junior Froned-End Developer</h4>
+                <div class="icons">
+                    <a href="https://www.facebook.com/profile.php?id=61550523406347" target="_blank">
+                        <img src="./img/facebook.png" alt="facebook"> </a>
+                    <a href="https://github.com/likago" target="_blank">
+                        <img src="./img/git.png" alt="github"> </a>
+                </div>
+            </div>
+            <div class="part3">
+                <h3> <span class="span">100%</span> satisfied clients</h3>
+                <div class="part3-line"></div>
+            </div>
+        </header>
+        <main></main>
+        <footer></footer>
+        <script>
+            const images = document.getElementById("images");
+            const imageSlider = ["./img/img1.JPG", "./img/img2.jpg", "./img/img3.jpg"];
+            let index = 0;
+            images.style.backgroundImage = `url(${imageSlider[index]})`;
+            setInterval(() => {
+                index < imageSlider.length - 1 ? index++ : (index = 0);
+                images.style.backgroundImage = `url(${imageSlider[index]})`;
+            }, 5000);
+        </script>
+    </body>
+</html>

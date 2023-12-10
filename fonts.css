@@ -1,0 +1,16 @@
+@font-face {
+    font-family: poppinsbold;
+    src: url(./fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: glaciabold;
+    src: url(./fonts/GlacialIndifference-Bold.ttf);
+}
+@font-face {
+    font-family: glaciaregular;
+    src: url(./fonts/GlacialIndifference-Regular.ttf);
+}
+@font-face {
+    font-family: montbold;
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
