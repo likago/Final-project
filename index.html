@@ -32,7 +32,138 @@
                 <div class="part3-line"></div>
             </div>
         </header>
-        <main></main>
+        <main>
+            <section class="container">
+                <div class="information-container">
+                    <div class="biography">
+                        <h3>Lika Goroziani</h3>
+                        <h5>FRONT-END DEVELOPER</h5>
+                        <div>
+                            <div></div>
+                            <h6>I am a junior front-end developer with a solid foundation in HTML, CSS, and JavaScript, along with genuine enthusiasm for creating seamless and visually appealing user experiences. Eager to contribute to dynamic projects, committed to continuous learning, and staying abreast of emerging web technologies. With a keen eye for detail and a collaborative mindset, I am excited to embark on the journey of building engaging and responsive web applications.</h6>
+                        </div>
+                        <button>Hire me</button>
+                    </div>
+                    <div class="profile">
+                        <img src="./img/profile.jpg" alt="profile">
+                    </div>
+                    <div class="progress-bar">
+                        <div>
+                            <div>
+                                <h3>HTML <span class="percentage-color">(80%)</span></h3>
+                                <div class="w3-border">
+                                    <div class="bar bar1 "></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>CSS <span class="percentage-color">(80%)</span></h3>
+                                <div class="w3-border">
+                                    <div class="bar bar1 "></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>JAVASCRIPT <span class="percentage-color">(20%)</span></h3>
+                                <div class="w3-border">
+                                    <div class="bar bar2 "></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icons transitions">
+                            <a href="https://www.facebook.com/profile.php?id=61550523406347" target="_blank">
+                                <img src="./img/facebook.png" alt="facebook"> </a>
+                            <a href="https://github.com/likago" target="_blank">
+                                <img src="./img/git.png" alt="github"> </a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <div class="information-nav">
+                        <div class="contact">
+                            <div class="contact-icons">
+                                <img src="./img/phone.svg" alt="phone" class="icon-phone">
+                            </div>
+                            <div>
+                                <h3>Phone Number</h3>
+                                <div class="contact-info">+995 598 112 363</div>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="contact-icons">
+                                <img src="./img/location.svg" alt="location" class="icon-location">
+                            </div>
+                            <div>
+                                <h3>user Address</h3>
+                                <h2 class="contact-info">Tbilisi D. Agmashenebeli N5 </h2>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="contact-icons">
+                                <img src="./img/email.svg" alt="email" class="icon-email">
+                            </div>
+                            <div>
+                                <h3>Email Address</h3>
+                                <h2 class="contact-info"> gorozianil@gmail.com</h2>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+            <section class="container">
+                <div class="services-container">
+                    <div class="service-card card1">
+                        <img src="./img/web-pages.svg" alt="web-pages">
+                        <h3>Building Web Pages</h3>
+                        <h5>Create and structure web pages using HTML, defining the content and layout of the website</h5>
+                    </div>
+                    <div class="service-card">
+                        <img src="./img/design.svg" alt="design">
+                        <h3>Styling with CSS</h3>
+                        <h5>Apply styles to web pages using CSS, including fonts, colors, layout</h5>
+                    </div>
+                    <div class="service-card">
+                        <img src="./img/js.svg" alt="javaskript">
+                        <h3>Implementing Interactivity with JavaScript</h3>
+                        <h5>Add client-side interactivity to web pages using JavaScript, such as form validation, image sliders, and dynamic content updates</h5>
+                    </div>
+                    <div class="service-card"> 
+                        <img src="./img/pixel.svg" alt="pixel">
+                        <h3>Collaborating with Designers</h3>
+                        <h5>Working closely with UI/UX designers to understand design requirements and implementing designs with attention to detail</h5>
+                    </div>
+                    <div class="service-card">
+                        <img src="./img/chart.svg" alt="Version">
+                        <h3>Version Control</h3>
+                        <h5>Using version control systems like Git to manage and track changes in the codebase, collaborating with other developers in a team environment</h5>
+                    </div>
+                    <div class="service-card">
+                        <img src="./img/service.svg" alt="responsive">
+                        <h3>Building Responsive Web Pages</h3>
+                        <h5>Creating web pages that adapt to different screen sizes and devices, ensuring a seamless user experience across desktops, tablets, and mobile devices</h5>
+                    </div>
+                </div>
+            </section>
+            <section class="container slider">
+                <p id="text"> "Aspiring junior front-end developer with a strong grasp of HTML, CSS, and JavaScript. Eager to contribute creative solutions to enhance user experiences and collaborate seamlessly with design teams. Committed to ongoing learning and staying updated on the latest industry trends."</p>
+                <div class="slider-border">
+                    <img class="slider-circle" id="recomendators" src="./img/image1.jpg"></div>
+                </div>
+                <div>
+                    <img src="./img/quote.svg" alt="quote">
+                    <h6 id="profession">Front-End Developer</h6>
+                    <h3 id="surname">Salome Shartava</h3>
+                </div>
+                <div>
+                    <div id="slider1" class="slider-box"></div>
+                    <div id="slider2" class="slider-box"></div>
+                    <div id="slider3" class="slider-box"></div>
+                </div>
+            </section>
+            <section>
+                <h1>Latest Projects</h1>
+                <div></div>
+                <div></div>
+            </section>
+        </main>
         <footer></footer>
         <script>
             const images = document.getElementById("images");
@@ -43,6 +174,33 @@
                 index < imageSlider.length - 1 ? index++ : (index = 0);
                 images.style.backgroundImage = `url(${imageSlider[index]})`;
             }, 5000);
+            const bars = document.querySelectorAll('.bar');
+            // console.log (bars)
+            const slider1 = document.getElementById("slider1");
+            const slider2 = document.getElementById("slider2");
+            const slider3 = document.getElementById("slider3");
+            const recomendators = document.getElementById("recomendators");
+            const text = document.getElementById("text"); 
+            const profession = document.getElementById("profession");
+            const surname = document.getElementById("surname");
+            slider1.addEventListener("click", function () {
+                recomendators.src= "./img/image1.jpg";
+                profession.textContent= "Front-End Developer";
+                surname.textContent= "Salome Shartava";
+                text.textContent = "Aspiring junior front-end developer with a strong grasp of HTML, CSS, and JavaScript. Eager to contribute creative solutions to enhance user experiences and collaborate seamlessly with design teams. Committed to ongoing learning and staying updated on the latest industry trends.";
+            });
+            slider2.addEventListener("click", function () {
+                recomendators.src= "./img/image2.jpg";
+                profession.textContent= "Full-Stack Developer";
+                surname.textContent= "Tako Goginava";
+                text.textContent = "Enthusiastic junior front-end developer proficient in HTML, CSS, and JavaScript. Passionate about crafting visually engaging and user-friendly websites. Keen on continuous learning and collaboration to drive innovation.";
+            });
+            slider3.addEventListener("click", function () {
+                recomendators.src= "./img/image3.jpg";
+                profession.textContent= "Back-End Developer";
+                surname.textContent= "Ana Beruashvili";
+                text.textContent = "Eager junior front-end developer with a solid grasp of HTML, CSS, and JavaScript. Enthusiastic about creating impactful user interfaces and committed to staying ahead in a dynamic tech landscape. Ready to contribute fresh ideas and expertise to collaborative projects.";
+            });
         </script>
     </body>
 </html>

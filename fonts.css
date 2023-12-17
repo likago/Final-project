@@ -14,3 +14,23 @@
     font-family: montbold;
     src: url(./fonts/Montserrat-Bold.ttf);
 }
+@font-face {
+    font-family: muli;
+    src: url(./fonts/Muli.ttf);
+}
+@font-face {
+    font-family: mulireg;
+    src: url(./fonts/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: mulilight;
+    src: url(./fonts/Muli-Light.ttf);
+}
+@font-face {
+    font-family: robotolight;
+    src: url(./fonts/Roboto-Light.ttf)
+}
+@font-face {
+    font-family: robotoreg;
+    src: url(./fonts/Roboto-Regular.ttf)
+}

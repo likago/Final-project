@@ -42,7 +42,7 @@
     padding-top: 138px;
     padding-left: 453px;
 }
-.part2 img {
+.icons img {
     width: 25px;
     padding-left: 5px;
 }
@@ -84,4 +84,222 @@
     height: 6px;
     background-color: #E93656;
     margin-top: 26px;
+}
+.profile img {
+    max-width: 430px;
+    height: 100%;
+}
+.information-container {
+    max-width: 1200px;
+    padding-top: 135px;
+    display: flex;
+    margin: auto;
+}
+.biography {
+    text-align: right;
+    margin-right: 70px;
+    margin-top: 83px;
+}
+.biography h3{
+    font-family: glaciabold;
+    font-size: 40px;
+    margin: 0;
+    color: #222222 ;
+}
+.biography h5{
+    font-family: muli;
+    font-size: 14px;
+    color: #DAAE19;
+    margin-top: 6px;
+}
+.biography h6{
+    font-family: mulireg;
+    font-size: 15px;
+    color: #555555;
+    margin-top: 33px;
+}
+.biography button {
+    width: 152px;
+    height: 50px;
+    background-color: #E93656;
+    font-family: glaciabold;
+    font-size: 15px;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.progress-bar {
+    margin-left: 70px;
+    margin-top: 59px;
+}
+.progress-bar h3 {
+    font-family: glaciabold;
+    font-size: 20px;
+    color: #555555;
+}
+.w3-border {
+    width: 300px;
+    height: 9px;
+    border: none;
+    background-color: #F0F0F0;
+}
+.bar {
+    background-color: #E93656;
+    height: 9px;
+}
+.percentage-color {
+    color: #E93656;
+}
+.bar1 {
+    width: 80%;
+}
+.bar2 {
+    width: 20%;
+}
+.transitions {
+    padding-top: 78px;
+    transition: 0.6 linear 0.5;
+}
+.transitions img {
+    width: 50px;
+}
+.transitions img:hover {
+    background-color: #15263E;
+}
+.main-nav {
+    background-color: #131A36;
+    margin-top: 100px;
+}
+.information-nav {
+    background-color: #131A36;
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact h3 {
+    font-family: glaciabold;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.contact-info {
+    font-family: muli;
+    font-size: 14px;
+    color: #DFDFDF;
+    margin-top: 15px;
+}
+.contact-icons {
+    width: 90px;
+    height: 90px;
+    border: 2px dashed #FFFFFF;
+    border-radius: 50px;
+    margin-right: 29px;
+    transition: 0.5 linear 0.6;
+
+}
+.contact-icons:hover {
+    background-color: #E93656;
+    border-style: none;
+}
+.icon-phone {
+    padding: 30px;
+}
+.icon-location {
+    padding: 30px 33px;
+}
+.icon-email {
+    padding: 34px 30px;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 288px));
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    max-width: 885px;
+    margin-top: 203px;
+}
+.service-card {
+    background-color: #FAFAFA;
+    position: relative;
+    text-align: center;
+    padding-top: 133px;
+    transition: 0.5 linear 0.6;
+    height: 280px;
+}
+.service-card h5 {
+    display: none;
+}
+.service-card:hover h5 {
+    display: block;
+    background-color: #15263E;
+    font-family: mulilight;
+    font-size: 14px;
+    color: #ECECEC;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+.slider {
+    background-image: url(./img/clip.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 570px;
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider p {
+    width: 497px;
+    font-family: robotolight;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-right: 78px;
+}
+.slider-border {
+    width: 170px;
+    height: 170px;
+    border: 2px dashed #FFFFFF;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+.slider-circle {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin: 15px;
+    object-fit: cover;
+}
+.slider-box {
+    width: 13px;
+    height: 13px;
+    border: 2px solid #FFFFFF;
+    margin: 13px;
+    margin-left: 153px;
+}
+#surname {
+    font-family: glaciabold;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+#profession {
+    font-family: robotoreg;
+    font-size: 13px;
+    color: #E93656;
+    margin: 0;
+    margin-top: 38px;
 }
