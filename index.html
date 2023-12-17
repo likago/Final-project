@@ -184,15 +184,15 @@
                     recomendators : "./img/image1.jpg"
                 },
                 {
-                    text :"Aspiring junior front-end developer with a strong grasp of HTML, CSS, and JavaScript. Eager to contribute creative solutions to enhance user experiences and collaborate seamlessly with design teams. Committed to ongoing learning and staying updated on the latest industry trends.",
-                    profession :"Front-End Developer",
-                    surname : "Salome Shartava",
+                    text :"Enthusiastic junior front-end developer proficient in HTML, CSS, and JavaScript. Passionate about crafting visually engaging and user-friendly websites. Keen on continuous learning and collaboration to drive innovation.",
+                    profession :"Full-Stack Developer",
+                    surname :"Tako Goginava",
                     recomendators : "./img/image2.jpg"
                 },
                 {
-                    text :"Aspiring junior front-end developer with a strong grasp of HTML, CSS, and JavaScript. Eager to contribute creative solutions to enhance user experiences and collaborate seamlessly with design teams. Committed to ongoing learning and staying updated on the latest industry trends.",
-                    profession :"Front-End Developer",
-                    surname : "Salome Shartava",
+                    text :"Eager junior front-end developer with a solid grasp of HTML, CSS, and JavaScript. Enthusiastic about creating impactful user interfaces and committed to staying ahead in a dynamic tech landscape. Ready to contribute fresh ideas and expertise to collaborative projects.",
+                    profession :"Back-End Developer",
+                    surname : "Ana Beruashvili",
                     recomendators : "./img/image3.jpg"
                 }
             ];
@@ -202,8 +202,12 @@
             });
             function changeSlide(index) {
                 const textElement = document.getElementById("text");
+                const professionElement = document.getElementById("profession");
+                const surnameElement = document.getElementById("surname");
                 const sliderImage = document.getElementById("recomendators");
+                professionElement.textContent = sliders[index].profession;
                 textElement.textContent = sliders[index].text;
+                surnameElement.textContent = sliders[index].surname;
                 sliderImage.src = sliders[index].recomendators;
             };
         </script>
