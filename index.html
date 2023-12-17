@@ -142,7 +142,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container slider">
+            <section class="container slider-info">
                 <p id="text"> "Aspiring junior front-end developer with a strong grasp of HTML, CSS, and JavaScript. Eager to contribute creative solutions to enhance user experiences and collaborate seamlessly with design teams. Committed to ongoing learning and staying updated on the latest industry trends."</p>
                 <div class="slider-border">
                     <img class="slider-circle" id="recomendators" src="./img/image1.jpg"></div>
@@ -153,9 +153,9 @@
                     <h3 id="surname">Salome Shartava</h3>
                 </div>
                 <div>
-                    <div id="slider1" class="slider-box"></div>
-                    <div id="slider2" class="slider-box"></div>
-                    <div id="slider3" class="slider-box"></div>
+                    <div id="slider1" class="slider"></div>
+                    <div id="slider2" class="slider"></div>
+                    <div id="slider3" class="slider"></div>
                 </div>
             </section>
             <section>
@@ -176,31 +176,36 @@
             }, 5000);
             const bars = document.querySelectorAll('.bar');
             // console.log (bars)
-            const slider1 = document.getElementById("slider1");
-            const slider2 = document.getElementById("slider2");
-            const slider3 = document.getElementById("slider3");
-            const recomendators = document.getElementById("recomendators");
-            const text = document.getElementById("text"); 
-            const profession = document.getElementById("profession");
-            const surname = document.getElementById("surname");
-            slider1.addEventListener("click", function () {
-                recomendators.src= "./img/image1.jpg";
-                profession.textContent= "Front-End Developer";
-                surname.textContent= "Salome Shartava";
-                text.textContent = "Aspiring junior front-end developer with a strong grasp of HTML, CSS, and JavaScript. Eager to contribute creative solutions to enhance user experiences and collaborate seamlessly with design teams. Committed to ongoing learning and staying updated on the latest industry trends.";
+            const sliders = [
+                {
+                    text :"Aspiring junior front-end developer with a strong grasp of HTML, CSS, and JavaScript. Eager to contribute creative solutions to enhance user experiences and collaborate seamlessly with design teams. Committed to ongoing learning and staying updated on the latest industry trends.",
+                    profession :"Front-End Developer",
+                    surname : "Salome Shartava",
+                    recomendators : "./img/image1.jpg"
+                },
+                {
+                    text :"Aspiring junior front-end developer with a strong grasp of HTML, CSS, and JavaScript. Eager to contribute creative solutions to enhance user experiences and collaborate seamlessly with design teams. Committed to ongoing learning and staying updated on the latest industry trends.",
+                    profession :"Front-End Developer",
+                    surname : "Salome Shartava",
+                    recomendators : "./img/image2.jpg"
+                },
+                {
+                    text :"Aspiring junior front-end developer with a strong grasp of HTML, CSS, and JavaScript. Eager to contribute creative solutions to enhance user experiences and collaborate seamlessly with design teams. Committed to ongoing learning and staying updated on the latest industry trends.",
+                    profession :"Front-End Developer",
+                    surname : "Salome Shartava",
+                    recomendators : "./img/image3.jpg"
+                }
+            ];
+            const sliderElements = document.querySelectorAll(".slider");
+            sliderElements.forEach((slider, index) => {
+                slider.addEventListener('click', () => changeSlide(index));
             });
-            slider2.addEventListener("click", function () {
-                recomendators.src= "./img/image2.jpg";
-                profession.textContent= "Full-Stack Developer";
-                surname.textContent= "Tako Goginava";
-                text.textContent = "Enthusiastic junior front-end developer proficient in HTML, CSS, and JavaScript. Passionate about crafting visually engaging and user-friendly websites. Keen on continuous learning and collaboration to drive innovation.";
-            });
-            slider3.addEventListener("click", function () {
-                recomendators.src= "./img/image3.jpg";
-                profession.textContent= "Back-End Developer";
-                surname.textContent= "Ana Beruashvili";
-                text.textContent = "Eager junior front-end developer with a solid grasp of HTML, CSS, and JavaScript. Enthusiastic about creating impactful user interfaces and committed to staying ahead in a dynamic tech landscape. Ready to contribute fresh ideas and expertise to collaborative projects.";
-            });
+            function changeSlide(index) {
+                const textElement = document.getElementById("text");
+                const sliderImage = document.getElementById("recomendators");
+                textElement.textContent = sliders[index].text;
+                sliderImage.src = sliders[index].recomendators;
+            };
         </script>
     </body>
 </html>

@@ -253,7 +253,7 @@
     margin: 0;
     text-align: center;
 }
-.slider {
+.slider-info {
     background-image: url(./img/clip.jpg);
     background-size: cover;
     background-position: center;
@@ -263,7 +263,7 @@
     justify-content: center;
     align-items: center;
 }
-.slider p {
+.slider-info p {
     width: 497px;
     font-family: robotolight;
     font-size: 15px;
@@ -284,7 +284,7 @@
     margin: 15px;
     object-fit: cover;
 }
-.slider-box {
+.slider {
     width: 13px;
     height: 13px;
     border: 2px solid #FFFFFF;
