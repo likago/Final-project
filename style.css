@@ -290,6 +290,10 @@
     border: 2px solid #FFFFFF;
     margin: 13px;
     margin-left: 153px;
+    transition: 0.5 linear 0.5;
+}
+.slider:hover {
+    border-color: #E93656;
 }
 #surname {
     font-family: glaciabold;
