@@ -386,7 +386,7 @@
 .project-title {
     margin-top: 144px;
     margin-bottom: 55px;
-    margin: 144px 550px 55px 855px;
+    /* margin: 144px 550px 55px 855px; */
     font-family: glaciabold;
     font-size: 70px;
     color: #2E2E2E;
@@ -471,7 +471,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 155px;
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
 }
 .rosa {
     max-width: 230px;
