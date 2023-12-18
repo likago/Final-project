@@ -471,6 +471,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 155px;
+    flex-wrap: wrap;
 }
 .rosa {
     max-width: 230px;
