@@ -570,5 +570,48 @@
     color: #EEEEEE;
     letter-spacing: 0.51px;
 }
+.footer-container2 {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.roca-container {
+    max-width: 613px;
+    margin: auto;
+    padding-top: 110px;
+    padding-bottom: 56px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+a svg {
+    margin-left: 10px;
+}
+.roca-container h1 {
+    font-family: poppinsbold;
+    font-size: 55px;
+    color: #FFFFFF;
+    letter-spacing: 1.66px;
+}
+.roca-container p {
+    font-family: robotoreg;
+    font-size: 17px;
+    color: #A5A5A5;
+    letter-spacing: 0.09px;
+}
+.footer-container3 {
+    background-color: #171717;
+    text-align: center;
+    font-family: muli;
+    font-size: 15px;
+    color: #A0A8B7;
+    padding-top: 27px;
+    padding-bottom: 36px;
+}
+.rosa-span {
+    color: #FAFAFA;
+}
+.roca-span {
+    color: #E93656;
+}
 
 
