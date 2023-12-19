@@ -38,3 +38,7 @@
     font-family: poppinssemibold;
     src: url(./fonts/Poppins-SemiBold.ttf)
 }
+@font-face {
+    font-family: japreg;
+    src: url(./fonts/Jaapokki-Regular.ttf)
+}

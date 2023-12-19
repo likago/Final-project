@@ -335,7 +335,32 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <section class="container footer-container1">
+                <div class="form-block">
+                    <h2>CONTACT US</h2>
+                    <p>Reach out to us for prompt assistance today</p>
+                    <form id="sign">
+                        <div class="input-block">
+                            <div>
+                                <input type="text" class="input1"  name="name" placeholder="Your Name*" id="name" required>
+                            </div>
+                            <div>
+                                <input type="text" class="input1" name="email"  placeholder="Email Address*" id="email" required>
+                            </div>
+                            <div>
+                                <input type="text" class="input1" name="website" placeholder="Your Website*" id="website" required>
+                            </div>
+                        </div>
+                        <textarea class="input2" placeholder="Message*"></textarea>
+                        <button  id="send">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </section>
+            <section> 
+                <div></div>
+            </section>
+        </footer>
         <script>
             const images = document.getElementById("images");
             const imageSlider = ["./img/img1.JPG", "./img/img2.JPG", "./img/img3.jpg"];
@@ -381,6 +406,98 @@
                 surnameElement.textContent = sliders[index].surname;
                 sliderImage.src = sliders[index].recomendators;
             };
+            // const postData = async () => {
+            // try {
+            //     const form = document.getElementById("sign");
+            //     const errorElement = document.createElement("p");
+            //     form.addEventListener("submit", (e) => {
+            //         e.preventDefault();
+            // try {
+            //     if (form.name.value.length < 4) {
+            //         throw new Error("First name must be more than 4 characters");
+            //     }
+            //     if (!form.email.value.match(
+            //         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            //     )) {
+            //         throw new Error("Email is not valid");
+            //     } else {
+            //         errorElement.remove();
+            //     }
+            //     if (form.website.value.length < 5) {
+            //         throw new Error("Website must be more than 5 characters");
+            //     }
+            //     const postData = {
+            //         name: form.name.value,
+            //         email: form.email.value,
+            //         website: form.website.value
+            //     };
+            //     const post = await fetch('https://borjomi.loremipsum.ge/api/send-message', {
+            //         method: "POST",
+            //         body: JSON.stringify(data),
+            //     });
+            //     const convertToJson = await response.json();
+            //     } catch (error) {
+            //         errorElement.textContent = error.message;
+            //         form.appendChild(errorElement);
+            //     }
+            //     });
+            const form = document.getElementById("sign");
+            const successElement = document.createElement("p");
+
+            const inputName = document.getElementById("name");
+            console.log (inputName)
+            const inputEmail = document.getElementById("email");
+            const inputWebsite = document.getElementById("website");
+            const textareaMessage = document.querySelector("textarea");
+            const send = document.getElementById("send");
+            const validateEmail = (email) => {
+            return };
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                try {
+                    if (form.inputName.value.length < 4) {
+                        throw new Error("name must be more than 4 characters");
+                    }
+                    if (!form.email.value.match(
+                        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                    )) {
+                        throw new Error("Email is not valid");
+                    } else {
+                        errorElement.remove();
+                    }
+                    if (form.website.value.length < 5) {
+                        throw new Error("Website must be more than 5 characters");
+                    }
+
+                    const data = {
+                        name: form.name.value,
+                        email: form.email.value,
+                        website: form.website.value
+                    };
+                    successElement.textContent = "Form submitted successfully!";
+                    form.appendChild(successElement);
+                    
+                    } catch (error) {
+                        const errorElement = document.createElement("p");
+                        errorElement.classList.add("error");
+                        errorElement.textContent = error.message;
+                        form.appendChild(errorElement);
+                    }
+                });
+
+            let inputText = [];
+
+            send.addEventListener("click", () => {
+                inputText.push(inputName.value);
+                inputName.value = "";
+                inputText.push(inputEmail.value);
+                inputEmail.value = "";
+                inputText.push(inputWebsite.value);
+                inputWebsite.value = "";
+                inputText.push(textareaMessage.value);
+                textareaMessage.value = "";
+            });
         </script>
     </body>
 </html>
