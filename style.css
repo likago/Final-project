@@ -312,7 +312,6 @@
     max-width: 1170px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
 }
 .projects {
     width: 240px;
@@ -647,10 +646,22 @@ a svg {
     .contact {
         margin-top: 20px;
     }
-    .project-cards {
-        /* grid-template-columns: repeat(3, minmax (900px)); */
+    .projects {
+        width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 30px;
     }
-
+    .projects h4 {
+        margin-right: 30px;
+    }
+    .project-cards {
+        margin: auto;
+    }
 
 
 
